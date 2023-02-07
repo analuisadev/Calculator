@@ -10,46 +10,46 @@
 <body> 
     <div id="app">
         <div class="total-calculation">
-            <div class="info-calc">1+1</div>
+            <div class="info-calc"></div>
             <div class="total">
                 <div class="equals"><img src="assets/img/equals.svg" alt="Equal sign informing the result of the calculation"></div>
-                <div class="calc-result">2</div>
+                <div class="calc-result"></div>
             </div>
         </div>
         <div class="wrapper">
             <div class="calculator">
                 <button onclick="clearResult()"class="btn-ce">CE</button>
                 <button onclick="removeCalc()" class="btn-clear">C</button>
-                <button id="%">
+                <button onclick="showNumber('%')">
                     <img src="assets/img/percent.svg" alt="Percent Sign">
                 </button>
-                <button class="btn-calculation" id="/">
+                <button class="btn-calculation" onclick="showNumber('/')">
                     <img src="assets/img/divide.svg" alt="Divide Sign">
                 </button>
-                <button id="7">7</button>
-                <button id="8">8</button>
-                <button id="9">9</button>
-                <button class="btn-calculation" id="*">
+                <button onclick="showNumber('7')">7</button>
+                <button onclick="showNumber('8')">8</button>
+                <button onclick="showNumber('9')">9</button>
+                <button class="btn-calculation" onclick="showNumber('*')">
                     <img src="assets/img/multiplication.svg" alt="Multiplication Sign">
                 </button>
-                <button id="4">4</button>
-                <button id="5">5</button>
-                <button id="6">6</button>
-                <button class="btn-calculation" id="-">
+                <button onclick="showNumber('4')">4</button>
+                <button onclick="showNumber('5')">5</button>
+                <button onclick="showNumber('6')">6</button>
+                <button class="btn-calculation" onclick="showNumber('-')">
                     <img src="assets/img/minus.svg" alt="Minus Sign">
                 </button>
-                <button id="1">1</button>
-                <button id="2">2</button>
-                <button id="3">3</button>
-                <button class="btn-calculation" id="+">
+                <button onclick="showNumber('1')">1</button>
+                <button onclick="showNumber('2')">2</button>
+                <button onclick="showNumber('3')">3</button>
+                <button class="btn-calculation" onclick="showNumber('+')">
                     <img src="assets/img/plus.svg" alt="Sum Sign">
                 </button>
-                <button>
+                <button onclick="showNumber('')">
                     <img src="assets/img/plusMinus.svg" alt="Plus/Minus Sign">
                 </button>
-                <button id="0" value="0">0</button>
+                <button onclick="showNumber('0')">0</button>
                 <button>,</button>
-                <button class="btn-equals" id="=">
+                <button class="btn-equals" onclick="calculate()">
                     <img src="assets/img/equalsSign.svg" alt="Equals Sign">
                 </button>
             </div>
