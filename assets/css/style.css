@@ -24,7 +24,7 @@
     font-size: 62.5%;
 }
 
-/* body pattern */
+/* Body pattern */
 
 body {
     background-color: var(--bg-body);
@@ -36,7 +36,7 @@ body {
     height: 100vh;
 }
 
-/* calculator container */
+/* Calculator container */
 
 #app {
     width: 35.6rem;
@@ -88,6 +88,7 @@ body {
 }
 
 /* Numbering section for calculation */
+
 .wrapper {
     display: flex;
     flex-direction: column;
